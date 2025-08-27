@@ -3,15 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ConvertaPara</title>
+    <title>ConvertAPara</title>
     <style>
         body { font-family: Arial, sans-serif; text-align: center; margin-top: 50px; }
         h1 { color: #333; }
         p { color: #666; }
+        form { margin-top: 20px; }
+        input[type="file"] { margin-bottom: 10px; }
     </style>
 </head>
 <body>
-    <h1>Bem-vindo ao ConvertaPara!</h1>
+    <h1>Bem-vindo ao ConvertAPara!</h1>
     <p>Selecione a conversão que deseja fazer:</p>
-    </body>
+    
+    <h3>Word para PDF</h3>
+    <form action="/upload-word-to-pdf" method="post" enctype="multipart/form-data">
+        <input type="file" name="file" accept=".docx">
+        <input type="submit" value="Converter para PDF">
+    </form>
+</body>
 </html>
